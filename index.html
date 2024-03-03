@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 33px 529px;
+
+    }
+
+    table,
+    tr,
+    td {
+        border: 2px solid black;
+        padding: 10px 15px;
+        border-collapse: collapse;
+
+    }
+
+    .one {
+        width: 82px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <table>
+            <tbody>
+                <form action="back.php">
+                    <tr class="one">
+                        <td colspan="2" style="border: none; text-align: center;">Report From</td>
+                    </tr>
+
+                    <tr class="one">
+                        <td colspan="2" style="background-color: rgb(17, 131, 202); text-align: center;">INFROMATION
+                            TABLE
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" placeholder="Enter Your Full Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" placeholder="Enter Your Email Address"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" placeholder="Enter Your Password"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" placeholder="Enter Your Complete Address"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select>
+                                <option value="Country">Select Country</option>
+                                <option value="Country">Pakistan</option>
+                                <option value="Country">Germany</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio">Male
+                            <input type="radio">Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            <input type="checkbox"> Reading
+                            <input type="checkbox"> Listenging
+                            <input type="checkbox"> Activity
+                            <input type="checkbox"> Team Work
+                            <br>
+                            <p style="color: red;">Chect All The Apply</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Your Website</td>
+                        <td><input type="text" placeholder="https:"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Other Infromation About You</td>
+                        <td><textarea class="textarea"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <!-- <td><button>Send In My Report</button></td> -->
+                        <!-- <td><button>Erase Report Form</button></td> -->
+                        <td><input type="submit" value="Send In My Report"></td>
+                        <td><input type="submit" value="Erase Report Form"></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
